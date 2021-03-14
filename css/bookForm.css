@@ -104,7 +104,7 @@ label {
     display: inline-block;
 }
 input[type="text" i] {
-    width: 85%;
+    width: 80%;
     padding: 12px 12px 12px 0px;
     border: 1px solid #BDBDBD;
     border-radius: 4px;
@@ -114,7 +114,7 @@ input[type="text" i] {
     margin-bottom: 20px;
 }
 input[type="add" i] {
-    width: 85%;
+    width: 80%;
     padding: 12px 12px 12px 0px;
     border: 1px solid #BDBDBD;
     border-radius: 4px;
@@ -125,7 +125,7 @@ input[type="add" i] {
     padding-bottom: 60px;
 }
 input[type="location"] {
-    width: 25%;
+    width: 23%;
     padding: 12px 12px 12px 0px;
     margin-top: 30px;
     margin-left: 40px;
