@@ -136,17 +136,39 @@ input[type="location"] {
     border-radius: 3px;
     opacity: 1;
 }
+
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+  }
 button {
     width: 180px;
     height: 53px;
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
     background: #E2E2E2 0% 0% no-repeat padding-box;
     border: 1px solid #969696;
     border-radius: 5px;
     opacity: 1;
 }
-    
+.cancelButton {
+    width: 180px;
+    height: 53px;
+    margin-top: 30px;
+    margin-left: 40px;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    text-align: center;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+    padding-top: 10px;
+  }
+
+  
 error-output {
     font-size: 12px;
     font-style: italic;
