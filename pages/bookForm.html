@@ -63,38 +63,6 @@
           </div>
         </div>
       </form>  
-    </div>
-    <script>
-      const text = document.querySelector('#name');
-      const textError = document.querySelector('.text-error');
-      text.addEventListener('input',function(){
-        let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
-        if (nameRegex.test(text.value))
-         textError.textContent =" ";
-       else textError.textContent = "Name is Incorrect";
-      });
-
-     const number = document.querySelector('#number');
-     const numberError = document.querySelector('.number-error');
-     number.addEventListener('input',function(){
-         let numberRegex = RegExp('^([\\+]?91)?[6-9]{1}[0-9]{9}$')
-         if (numberRegex.test(number.value))
-            numberError.textContent = " ";
-        else
-            numberError.textContent = "Number is Incorrect";
-     });
-
-     const address = document.querySelector('#address');
-     const addressError = document.querySelector('.address-error');
-     address.addEventListener('input',function(){
-         let addressRegex = RegExp('[a-zA-Z0-9]{3,}$')
-         if (addressRegex.test(address.value))
-            addressError.textContent = " ";
-        else
-            addressError.textContent = "Address is Incorrect";
-     });
-     
-    </script>
-     
+    </div>  
 </body>
 </html>

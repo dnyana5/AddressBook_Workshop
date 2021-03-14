@@ -5,17 +5,28 @@ class AddressBookData {
     }
     get name() {return this._name;}
     set name(name) {
+        let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+        if (nameRegex.test(name))
         this._name = name;
+       else throw "Name is Incorrect";
+       
     }
 
     get number() {return this._number;}
     set number(number) {
+        let numberRegex = RegExp('^([\\+]?91)?[6-9]{1}[0-9]{9}$')
+        if (numberRegex.test(number))
         this._number = number;
+       else throw "Number is Incorrect";
     }
 
     get address() {return this._address;}
     set address(address) {
+        let addressRegex = RegExp('[a-zA-Z0-9]{3,}$')
+        if (addressRegex.test(address))
         this._address = address;
+       else throw "Address is Incorrect";
+        
     }
 
     get city() {return this._city;}
