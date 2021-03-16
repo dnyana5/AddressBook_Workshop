@@ -54,12 +54,12 @@ const save = () => {
     }
   }
 
-  function createAndUpdateStorage(addressBook) {
+  function createAndUpdateStorage(addressBookData) {
     let addressBookList = JSON.parse(localStorage.getItem("AddressBookList"));
     if(addressBookList != undefined)
-        addressBookList.push(addressBook);
+        addressBookList.push(addressBookData);
     else
-        addressBookList = [addressBook];
+        addressBookList = [addressBookData];
     alert(addressBookList.toString());
     localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
 }
@@ -88,3 +88,16 @@ const save = () => {
     let value = document.querySelector(id).value;
     return value;
   }
+
+  const resetForm = () => {
+    setValue('#name', ' ');
+    setValue('#number', '');
+    setValue('#address', '');
+    setValue('#city', '');
+    setValue('#state', '');
+    setValue('#zip', '');
+}
+const setValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.value = value;
+}
