@@ -1,0 +1,65 @@
+body {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    border: 0px solid green;
+}
+
+.logo-content-img {
+    border: 0px solid #42515f;
+}
+
+.headerContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background :rgb(75, 91, 236);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.add-text {
+    font: normal normal bold 22px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #2284e9;
+    text-transform: capitalize;
+}
+
+.form-content.form-items {
+    width:100%;
+    box-sizing:border-box;
+    font-size:1em;
+    margin-top:0.5em;
+    padding:0.5em;
+}
+
+.add-book {
+    color: #42515f;
+}
+* {
+    box-sizing: border-box;
+}
