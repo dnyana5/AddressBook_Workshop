@@ -48,3 +48,9 @@ const remove = (node) => {
   createInnerHtml();
   
 }
+const update = (node) => {
+  let addressBookData = personList.find(addData => addData._id == node._id)
+  if (!addressBookData) return;
+  localStorage.setItem('editPer', JSON.stringify(addressBookData))
+  window.location.replace(site_properties.add_person_details_pages); 
+}
