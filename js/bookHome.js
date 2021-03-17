@@ -37,7 +37,7 @@ const createInnerHtml = () => {
 }
 
 const remove = (node) => {
-  let addressBookData = personList.find(addData => addData._id == node._id);
+  let addressBookData = personList.find(addData => addData._id == node.id);
   if(!addressBookData) return;
   const index = personList
                   .map(addData => addData._id)
@@ -49,7 +49,7 @@ const remove = (node) => {
   
 }
 const update = (node) => {
-  let addressBookData = personList.find(addData => addData._id == node._id)
+  let addressBookData = personList.find(addData => addData._id == node.id)
   if (!addressBookData) return;
   localStorage.setItem('editPer', JSON.stringify(addressBookData))
   window.location.replace(site_properties.add_person_details_pages); 
